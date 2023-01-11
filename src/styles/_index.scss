@@ -1,0 +1,8 @@
+@import './mixins.scss';
+@import './theme.scss';
+@import './normalize.scss';
+
+
+body{
+    background: var(--bg-Color);
+}

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+    --secondary-font: "poppins";
+    [data-theme="light"] {
+        //colorsa
+        transition: all 0.3s ease;
+        --bg-Color: #ffffff;
+        --bg-secondary-color: #f1f3f3;
+        --bg-tertiary-color: #e8e8e8;
+        --secondary-color: #ed1543;
+        --text-color: #0e0e0e;
+        --overlay-color: rgba(0, 0, 0, 0.1);
+        --line-color : rgba(0,0,0,0.4);
+        --footer-color: #18191b;
+    }
+
+    [data-theme="dark"] {
+        transition: all -1.3s ease;
+        --bg-Color: #111111;
+        --bg-secondary-color:#1b1819;
+        --bg-tertiary-color: #211f20;
+        --secondary-color: #ed1543;
+        --text-color: #f4efef;
+        --overlay-color: rgba(0, 0, 0, 0.9);
+        --line-color: #636363;
+        --footer-color: #18191b;
+    }
+}
