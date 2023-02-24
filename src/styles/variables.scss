@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+:root {
+    [data-theme= "light" ] {
+        transition: all 0.3s ease;
+
+        //principal-colors
+        --bg-Color: #ffffff;
+        --bg-secondary-color: #f1f3f3;
+        --bg-tertiary-color: #e8e8e8;
+        --secondary-color: #ed1543;
+        --text-color: #0e0e0e;
+        --overlay-color: rgba(0, 0, 0, 0.1);
+        --line-color: rgba(0, 0, 0, 0.4);
+        --footer-color: #18191b;
+
+        //editor-colors
+        
+    }
+    
+    [data-theme="dark"] {
+        // principal colors
+        transition: all -1.3s ease;
+        --bg-Color: #111111;
+        --bg-secondary-color: #1b1819;
+        --bg-tertiary-color: #211f20;
+        --secondary-color: #ed1543;
+        --text-color: #f4efef;
+        --overlay-color: rgba(0, 0, 0, 0.9);
+        --line-color: #636363;
+        --footer-color: #18191b;
+        
+    }
+    //editor colors
+    --bg-window-color: #0B121C;
+    --bg-editor-color: #080D14;
+    --window-color: #0376f7;
+    --file-color : #3EB071;
+    --secondary-file-color : #CCCCCC;
+    --number-color : #53565B;
+    --border-color : #000;
+    
+    //fonts
+    --tertiarly-font : 'jetbrains mono';
+    --secondary-font : 'poppins';
+}

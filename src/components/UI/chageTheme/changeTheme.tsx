@@ -1,9 +1,9 @@
 import "./changeTheme.scss";
 import React from "react";
-import ThemeContext from "../../../context/themeContext";
-import { renderTheme } from "../../../services/themeServices";
+import { renderTheme } from "@Portfolio/services/themeServices";
+import ThemeContext from "@Portfolio/context/themeContext";
 
-export const ChangeTheme = ({ label }: any) => {
+export const ChangeTheme = () => {
     const { theme, setTheme, loadTheme } = React.useContext(ThemeContext);
 
     React.useEffect(() => {

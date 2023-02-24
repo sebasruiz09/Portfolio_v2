@@ -5,9 +5,9 @@ import {
     AiOutlineUser,
 } from "react-icons/ai";
 import {FiMoreVertical } from "react-icons/fi";
+import { ChangeTheme } from "@Portfolio/components/UI";
 
 
-import { ChangeTheme } from "../../UI/chageTheme/changeTheme";
 
 export const Sidebar = () => {
     const ToogleSidebar = () => {
