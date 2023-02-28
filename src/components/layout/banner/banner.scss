@@ -1,0 +1,70 @@
+@use "./src/styles/mixins.scss" as *;
+
+.headBanner {
+    background: var(--bg-Color);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include screen(mobile) {
+        padding: 50px 100px;
+        flex-direction: row;
+    }
+
+    @include screen(large){
+        padding: 60px 150px;
+    }
+
+}
+
+.banner {
+    width: 100%;
+    padding: 30px 0;
+    font-family: var(--primary-font);
+    color: var(--text-color);
+
+    &__title {
+        padding: 0 auto auto auto;
+        margin: 0 auto auto auto;
+        font-size: 45px;
+
+        @include screen(small) {
+            font-size: 55px;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        width: max-content;
+    }
+
+    &__desc {
+        max-width: 300px;
+        line-height: 22px;
+        font-size: 15px;
+        margin: 20px 0;
+
+        @include screen(small) {
+            max-width: 440px;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 40px 0;
+        }
+    }
+
+    button[type="button"] {
+        margin: 10px 0;
+        @extend %buttonBlock;
+    }
+
+    @include screen(med-small){
+        width: 50%;
+    }
+}
+
+.bannerImage {
+    display: none;
+    outline: solid 1px red;
+    width: 50%;
+}

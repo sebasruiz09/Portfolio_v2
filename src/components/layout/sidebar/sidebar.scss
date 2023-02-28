@@ -73,7 +73,7 @@ body.open {
     filter: blur(10px);
     transition-property: filter, visibility, opacity;
     transition-duration: 0.6s;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
 
     &__avatar {
         width: 80px;
@@ -106,9 +106,8 @@ body.open {
         display: flex;
         gap: 8px;
         align-items: center;
-        font-family: var(--secondary-font);
+        font-family: var(--primary-font);
         font-size: 22px;
-        letter-spacing: 1px;
         line-height: 2;
         padding: 10px 20px;
     }

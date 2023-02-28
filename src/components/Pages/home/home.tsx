@@ -1,11 +1,12 @@
-import { Sidebar } from "@Portfolio/components/layout";
-import { CodeFragment } from "@Portfolio/components/UI";
+import { Banner, Sidebar } from "@Portfolio/components/layout";
 
 export const Home = () => {
     return (
-        <div className="home_content">
+        <div className="home">
             <Sidebar />
-            <CodeFragment />
+            <div className="home__content">
+                <Banner />
+            </div>
         </div>
     );
 };

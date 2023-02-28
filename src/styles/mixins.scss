@@ -1,12 +1,66 @@
 @mixin whenDark {
-	html.dark & {
-		@content;
-	}
+    html.dark & {
+        @content;
+    }
 
-	// Ensure dark mode still works if JS is disabled (e.g. if you are pre-rendering your site)
-	@media (prefers-color-scheme: dark) {
-		& {
-			@content;
-		}
-	}
+    // Ensure dark mode still works if JS is disabled (e.g. if you are pre-rendering your site)
+    @media (prefers-color-scheme: dark) {
+        & {
+            @content;
+        }
+    }
+}
+
+$breakpoint-mobile: 500px;
+$breakpoint-small: 768px;
+$breakpoint-med-small: 992px;
+$breakpoint-med: 1200px;
+$breakpoint-large: 1400px;
+$breakpoint-XLarge: 1900px;
+
+@mixin screen($size, $type: min, $pixels: $breakpoint-small) {
+    @if $size == "small" {
+        @media screen and (#{$type}-width: $breakpoint-small) {
+            @content;
+        }
+    } @else if $size == "mobile" {
+        @media screen and (#{$type}-width: $breakpoint-mobile) {
+            @content;
+        }
+    } @else if $size == "med-small" {
+        @media screen and (#{$type}-width: $breakpoint-med-small) {
+            @content;
+        }
+    } @else if $size == "med" {
+        @media screen and (#{$type}-width: $breakpoint-med) {
+            @content;
+        }
+    } @else if $size == "large" {
+        @media screen and (#{$type}-width: $breakpoint-large) {
+            @content;
+        }
+    } @else if $size == "custom" {
+        @media screen and (#{$type}-width: #{$pixels}px) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+%buttonBlock {
+    background: var(--button-color);
+    padding: 15px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+
+    :nth-child(1) {
+        color: #fff;
+        font-family: var(--primary-font);
+    }
+
+    &:hover {
+        background: none;
+        outline: solid 2px var(--button-color);
+    }
 }

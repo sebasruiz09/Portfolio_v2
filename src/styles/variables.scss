@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 :root {
     [data-theme= "light" ] {
@@ -30,18 +31,11 @@
         --overlay-color: rgba(0, 0, 0, 0.9);
         --line-color: #636363;
         --footer-color: #18191b;
-        
-    }
-    //editor colors
-    --bg-window-color: #0B121C;
-    --bg-editor-color: #080D14;
-    --window-color: #0376f7;
-    --file-color : #3EB071;
-    --secondary-file-color : #CCCCCC;
-    --number-color : #53565B;
-    --border-color : #000;
-    
+    }   
     //fonts
     --tertiarly-font : 'jetbrains mono';
-    --secondary-font : 'poppins';
+    --primary-font : 'montserrat';
+
+    //general colors
+    --button-color : #ea2845;
 }
