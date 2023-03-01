@@ -1,34 +1,46 @@
+textarea,
+select,
+input,
+button {
+    outline: none;
+}
+:focus {
+    outline-color: transparent;
+    outline-style: none;
+}
+
 button {
     background: transparent;
     border: 0;
     padding: 0;
     cursor: pointer;
     margin: 3px 0;
+    user-select: none;
 }
-
 
 .overlay {
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    width: 100%;
     height: 100%;
     transition: 0.4s;
 }
 
 body.open {
     .overlay {
+        width: 100vw;
         opacity: 1;
         visibility: visible;
         transition: all 0.4s ease;
-        backdrop-filter: blur(3px);
+        backdrop-filter: blur(4px);
     }
 
     .burger__avatar {
         translate: 40px 0;
         opacity: 0;
         visibility: hidden;
+        user-select: none;
     }
 
     .sidebar {
@@ -43,16 +55,22 @@ body.open {
 .burger {
     position: fixed;
     z-index: 3;
-    top: 20px;
+    top: 5px;
     right: 12px;
     display: flex;
     align-items: center;
     gap: 6px;
+    user-select: none;
+    &:active {
+        background: transparent;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
 
     &__avatar {
         width: 30px;
         height: 30px;
         transition: 0.4s;
+        user-select: none;
     }
 }
 
@@ -128,15 +146,11 @@ body.open {
     color: var(--text-color);
 }
 
-@media (width > 575px) {
-    .overlay{
-        width: 230px;
-    }
-}
 
 @media (width > 330px) {
     .sidebar {
         transition-property: translate;
+        transition: all 0.3s ease-in;
     }
 }
 
@@ -144,7 +158,6 @@ body.open {
     .sidebar {
         translate: 100% 0;
         width: 230px;
-        transition: 0.4s;
         border-left: 1px solid var(--line-color);
     }
 }
@@ -152,10 +165,11 @@ body.open {
 @media (width > 350px) {
     .sidebar__menu {
         padding-left: 0;
+        transition: all 0.3s ease;
     }
 }
 
-.theme-box{
+.theme-box {
     display: flex;
     align-items: center;
 }

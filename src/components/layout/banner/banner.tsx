@@ -15,10 +15,16 @@ export const Banner = () => {
                         development.
                     </p>
                 </div>
-                <button type="button">
-                    <span>Download my CV</span>
-                </button>
+                <div className="banner__buttons">
+                    <button type="button">
+                        <span>Download my CV</span>
+                    </button>
+                    <button type="button">
+                        <span>  Some projects</span>
+                    </button>
+                </div>
             </article>
+
             <article className="bannerImage">
                 <picture>
                     <img src="" alt="banner" />

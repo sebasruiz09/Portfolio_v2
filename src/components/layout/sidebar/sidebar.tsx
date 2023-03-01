@@ -24,7 +24,7 @@ export const Sidebar = () => {
                 <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="" className="burger__avatar"/>
                 <FiMoreVertical className="icons" />
             </button>
-            <div className="overlay">
+            <div className="overlay" onClick={()=> ToogleSidebar()}>
                 <aside className="sidebar">
                     <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="" className="sidebar__avatar" />
                     <p className="sidebar__username">Sebastian Ruiz</p>

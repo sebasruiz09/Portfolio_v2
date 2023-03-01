@@ -50,17 +50,8 @@ $breakpoint-XLarge: 1900px;
 
 %buttonBlock {
     background: var(--button-color);
-    padding: 15px 25px;
+    padding: 15px 0;
     border-radius: 30px;
     transition: all 0.3s ease;
-
-    :nth-child(1) {
-        color: #fff;
-        font-family: var(--primary-font);
-    }
-
-    &:hover {
-        background: none;
-        outline: solid 2px var(--button-color);
-    }
+    cursor: pointer;
 }

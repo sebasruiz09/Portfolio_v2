@@ -1,4 +1,5 @@
-import { Banner, Sidebar } from "@Portfolio/components/layout";
+import { Banner, Sidebar, Skills } from "@Portfolio/components/layout";
+import { Project } from '../../UI/project/project';
 
 export const Home = () => {
     return (
@@ -6,6 +7,8 @@ export const Home = () => {
             <Sidebar />
             <div className="home__content">
                 <Banner />
+                <Skills />
+                <Project />
             </div>
         </div>
     );
