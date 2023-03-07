@@ -1,5 +1,15 @@
-import React from "react";
+import { Project } from "@Portfolio/components/UI";
 
-export const main = () => {
-    return <div>main</div>;
+export const Main = () => {
+    return (
+        <main>
+            <Project direction="row" align="flex-end" alingText="end" />
+            <Project
+                direction="row-reverse"
+                align="flex-start"
+                alingText="start"
+            />
+            <Project direction="row" align="flex-end" alingText="end" />
+        </main>
+    );
 };

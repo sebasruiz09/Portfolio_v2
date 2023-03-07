@@ -1,5 +1,5 @@
 import { Banner, Sidebar, Skills } from "@Portfolio/components/layout";
-import { Project } from '../../UI/project/project';
+import { Main } from "@Portfolio/components/layout/main/main";
 
 export const Home = () => {
     return (
@@ -8,7 +8,7 @@ export const Home = () => {
             <div className="home__content">
                 <Banner />
                 <Skills />
-                <Project />
+                <Main />
             </div>
         </div>
     );

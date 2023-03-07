@@ -31,7 +31,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
     gap: 15px;
 
     &__header{
@@ -43,13 +42,13 @@
         padding: 30px;
         text-align: end;
         border-radius: 5px;
-        background: var(--shadow-color);
+        background: rgba(0,0,0, .2);
+        backdrop-filter: blur(5px);
     }
 
     &__tags {
         display: flex;
         padding: 5px;
         gap: 15px;
-        justify-content: flex-end;
     }
 }
