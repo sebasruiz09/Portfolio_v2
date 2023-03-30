@@ -1,4 +1,3 @@
-export { Skills } from './skills/skills';
-export { Banner } from './banner/banner';
+export { Footer } from './footer/footer';
 export { Sidebar } from './sidebar/sidebar';
-export { Main } from './main/main';
+

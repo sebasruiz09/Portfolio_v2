@@ -28,7 +28,7 @@ export const Sidebar = () => {
                 <aside className="sidebar">
                     <img src="https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg" alt="" className="sidebar__avatar" />
                     <p className="sidebar__username">Sebastian Ruiz</p>
-                    <p className="sidebar__role">Full stack Jr Developer</p>
+                    <p className="sidebar__role">Full stack Developer</p>
                     <nav className="sidebar__menu">
                         <button className="button-menu">
                             <AiOutlineHome className="icons"/>
